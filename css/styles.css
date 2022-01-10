@@ -1,0 +1,32 @@
+/*
+3 Column Responsive layout html css
+https://www.youtube.com/watch?v=Ey13VnSXxUk
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout
+https://developer.mozilla.org/en-US/docs/Web/CSS/display
+
+*/
+
+.container {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.box {
+    height: 200px;
+    color: white;
+    border: 2px solid white;
+    position: relative;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
